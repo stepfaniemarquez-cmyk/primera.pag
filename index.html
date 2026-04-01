@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO-VR | El Futuro de la Realidad Virtual</title>
+    <style>
+        :root {
+            --primary: #00f2fe;
+            --secondary: #4facfe;
+            --dark: #0a0a0b;
+            --light: #f4f4f4;
+            --accent: #ff00c1;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+
+        header {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&q=80&w=2070') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section { margin-bottom: 80px; }
+
+        h2 {
+            border-left: 5px solid var(--primary);
+            padding-left: 15px;
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1a1a1c;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #1a1a1c;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #333;
+        }
+
+        th { color: var(--primary); }
+
+        .highlight { color: var(--secondary); font-weight: bold; }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #000;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>NEO-VR Gafas Innovadoras</h1>
+        <p>No es una escapatoria del mundo real, es una expansión de nuestras capacidades.</p>
+        <a href="#proceso" class="btn">Explorar Tecnología</a>
+    </header>
+
+    <div class="container">
+        
+        <section id="concepto">
+            <h2>01. La Revolución Visual</h2>
+            <p>Nuestra propuesta rompe las barreras de la RV convencional. Hemos diseñado un dispositivo que soluciona los tres grandes problemas de la industria: el peso, la latencia y la autonomía.</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Lentes de Grafeno</h3>
+                    <p>Reducción de peso del 40% comparado con las gafas estándar de la industria.</p>
+                </div>
+                <div class="card">
+                    <h3>Seguimiento Ocular</h3>
+                    <p>Renderizado fóveo que concentra la potencia donde tus ojos miran realmente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="specs">
+            <h2>02. Especificaciones Técnicas</h2>
+            <div class="grid">
+                <div class="card">
+                    <p><span class="highlight">Pantallas:</span> Micro-OLED 8K (por ojo).</p>
+                    <p><span class="highlight">Procesador:</span> Chip Neo-X de 2nm.</p>
+                </div>
+                <div class="card">
+                    <p><span class="highlight">Sensores:</span> LiDAR + 6 Cámaras Inside-out.</p>
+                    <p><span class="highlight">Batería:</span> 6 horas de uso continuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="proceso">
+            <h2>03. Proceso de Creación</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fase</th>
+                        <th>Actividad</th>
+                        <th>Hito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Prototipado</td>
+                        <td>Impresión 3D y circuitos.</td>
+                        <td>MVP Funcional</td>
+                    </tr>
+                    <tr>
+                        <td>Pruebas</td>
+                        <td>Test de fatiga y ergonomía.</td>
+                        <td>Diseño Final</td>
+                    </tr>
+                    <tr>
+                        <td>Lanzamiento</td>
+                        <td>Campaña con Influencers y Showrooms.</td>
+                        <td>Mercado Global</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 NEO-VR Technologies. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
